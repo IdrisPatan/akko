@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
-import green2 from './green2.jpg';
 import './App.css';
 import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
@@ -21,7 +20,9 @@ class App extends Component {
                     <p>
                         A little over two months ago, I had just returned from a trip to London it was a low point in my life.
                         I was about to put myself into something I had no clue about but something stopped me from doing that.
-                        At that point I didn't care much who I going to marry be with, I had given up on finding my ideal girl.
+                        At that point I didn't care much who I going to marry or be with, I had given up on finding my ideal girl.
+
+
                     </p>
                     <p>
                         My ideal Girl: a modest Afghan Hijabi girl who knows her deen, her priorities in life, and respectable.
@@ -30,8 +31,9 @@ class App extends Component {
                         I wished for her to be my best friend, someone romantic and loving, someone who will give me all the love that I was holding inside.
                     </p>
                     <p>
-                        I knew that those qualities were rare but it was more challenging to find them in an Afghan Girl.
-                        But then on September 4th at 9:45am I send a message to a girl with the Green Image with the name of A NA 26, from Canada
+                        I knew that those qualities were rare but it was more challenging to find them in an Afghan Girl...
+                        But then Allah Sbt answered my prayers just as I was about to give up...
+                        But then on September 4th at 9:45am I sent a message to a girl with the Green Image with the name of A NA 26, from Canada
                         at that point I never thought that message will change my life forever....
                     </p>
                     <p>
@@ -41,6 +43,15 @@ class App extends Component {
                         I really Like you ! I can talk for hours about how pretty you are and how much i like you and I thing i have bugged you enough
                         about everything. but I will just Say one thing. I Can not find anyone like you !
                     </p>
+
+                  <p>
+                      Allhamdu Lellah the third thing I said was “My name is Mohamad Idris what is your name ?“
+                      That’s how I got introduced to a very sweet girl Akko Jan...
+                      Allhamdeu Lellah I have a smile on my face now. Thanks to you Akko Jan !
+                      I really Like you ! I can talk for hours about how pretty you are and how much i like you and I thing i have bugged you enough
+                      about everything. but I will just Say one thing. I Can not find anyone like you !
+                  </p>
+
                   <p>
                       If you think you can tolerate me Click me!
                       Will you Marry Me ?
