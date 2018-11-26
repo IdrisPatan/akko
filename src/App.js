@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import meLondon from './meLondon.jpg'
-import NestedModal from './NestedModal'
+import me from './me.jpg'
+import NestedModal from './BasicModal'
 import {
     Button,
     Container,
@@ -215,7 +215,7 @@ const App = () => <ResponsiveContainer>
                     </p>
                 </Grid.Column>
                 <Grid.Column floated='right' width={6}>
-                    <Image bordered rounded size='large' src={meLondon}/>
+                    <Image bordered rounded size='large' src={me}/>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
@@ -302,11 +302,7 @@ const App = () => <ResponsiveContainer>
                 <p>
                     <b> I can not find anyone like you ! </b>
                 </p>
-                But keep in mind Babe that :
-                <li>I am not perfect, I have my shortcomings</li>
-                <li>I can not make the distance between Dallas and Toronto to be shorter</li>
-                <li>But I will try my best to make the journey to enjoyable!</li>
-                <li>And Love You Only You With All My Heart</li>
+
             </p>
             <Button as='a' size='large'
                     onClick={this.toggleModal}>
