@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import {BasicModal} from './BasicModal'
 import think from './tinking.png'
 import me from './me.jpg'
+
 import {
-    Button,
     Container,
     Divider,
     Grid,
@@ -17,8 +17,6 @@ import {
     Segment,
     Visibility,
 } from 'semantic-ui-react'
-import {Modal} from "semantic-ui-react/dist/commonjs/modules/Modal/Modal";
-
 
 const HomepageHeading = ({ mobile }) => (
     <Container text>
@@ -61,10 +59,7 @@ class HomepageLayout extends Component {
     hideFixedMenu = () => this.setState({ fixed: false })
     showFixedMenu = () => this.setState({ fixed: true })
 
-    toggleModal = () => {
-        console.log("I am Handling Modal Render")
-        this.setState(state => ({ openModal: !state.openModal }));
-    }
+
     render() {
         const { fixed } = this.state
         return (
@@ -198,7 +193,7 @@ class HomepageLayout extends Component {
                                 horizontal
                                 style={{margin: '3em 0em', textTransform: 'uppercase'}}
                             >
-                                <a href='#'>Voice of Heart</a>
+                                <a>Voice of Heart</a>
                             </Divider>
                             <Header as='h3' style={{fontSize: '2em'}}>
                                 Did I Tell You How I Feel About You?
