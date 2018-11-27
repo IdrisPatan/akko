@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import me from './me.jpg'
-import NestedModal from './BasicModal'
 import {
     Button,
     Container,
@@ -45,10 +44,10 @@ const HomepageHeading = ({ mobile }) => (
                 marginTop: mobile ? '0.5em' : '1.5em',
             }}
         />
-        <Button primary size='huge'>
-            Get Started
-            <Icon name='right arrow' />
-        </Button>
+        {/*<Button primary size='huge'>*/}
+            {/*Get Started*/}
+            {/*<Icon name='right arrow' />*/}
+        {/*</Button>*/}
     </Container>
 )
 
@@ -82,7 +81,7 @@ class DesktopContainer extends Component {
                     <Segment
                         inverted
                         textAlign='center'
-                        style={{ minHeight: 700, padding: '1em 0em' }}
+                        style={{ minHeight: 700, padding: '1em 0em', background: 'linear-gradient(to bottom, #07101d, #004366, #007e91, #00b982, #0df02c)'}}
                         vertical
                     >
                         <Menu
@@ -234,7 +233,7 @@ const App = () => <ResponsiveContainer>
             <Grid.Row textAlign='center'>
                 <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                     <Header as='h3' style={{fontSize: '2em'}}>
-                        "Afghan Only"
+                        "Afghan Only ?"
                     </Header>
                     <p style={{fontSize: '1.33em'}}>
                         That is was my second most important criteria
@@ -242,10 +241,10 @@ const App = () => <ResponsiveContainer>
                 </Grid.Column>
                 <Grid.Column style={{paddingBottom: '5em', paddingTop: '5em'}}>
                     <Header as='h3' style={{fontSize: '2em'}}>
-                        "It shouldn't be Afghan only, But Muslim Only "
+                        "Or Muslim Only ?"
                     </Header>
                     <p style={{fontSize: '1.33em'}}>
-                        {/*<Image avatar src='/images/avatar/large/nan.jpg' />*/}
+                        <Image avatar src='./thinking.png' />
                         I choose this route!
                     </p>
                 </Grid.Column>
@@ -255,7 +254,7 @@ const App = () => <ResponsiveContainer>
     <Segment style={{padding: '8em 0em'}} vertical>
         <Container text>
             <Header as='h3' style={{fontSize: '2em'}}>
-                When I Made The Deen My Only Choice
+                When I Made The Deen Option As My Choice!
             </Header>
             <p style={{fontSize: '1.33em'}}>
                 I knew that those qualities were rare but it was more challenging to find them in an Afghan Girl...
@@ -266,7 +265,7 @@ const App = () => <ResponsiveContainer>
                 at that point I never thought that message will change my life forever....
             </p>
             <Header as='h3' style={{fontSize: '2em'}}>
-                "Dil Ba Dil Ra Darad"
+                "Dil Ba Dil Ra Darad - 5G Connection"
             </Header>
             <p>
                 Allhamdu Lellah the third thing I said was “My name is Mohamad Idris what is your name ?“
@@ -310,20 +309,8 @@ const App = () => <ResponsiveContainer>
             </Button>
                     "Mohamad Idris"
         </Container>
-        {/*<div className="ui modal">*/}
-            {/*<div className="header">Header</div>*/}
-            {/*<div className="image content">*/}
-                {/*<img className="image"/>*/}
-                    {/*<div className="description">*/}
-                        {/*<p>Modal Will be Here </p>*/}
-                    {/*</div>*/}
-            {/*</div>*/}
-        {/*</div>*/}
-    </Segment>
 
-    {/*<script>*/}
-        {/*$('.ui.basic.modal').modal('show')}*/}
-    {/*</script>*/}
+    </Segment>
 
     <Segment inverted vertical style={{padding: '5em 0em'}}>
         <Container>
@@ -349,10 +336,10 @@ const App = () => <ResponsiveContainer>
                     </Grid.Column>
                     <Grid.Column width={7}>
                         <Header as='h4' inverted>
-                            Remember
+                            Getting To Know
                         </Header>
                         <p>
-                            Insha Allah! If You Accept Me, I will feel like I am the luckiest Afghan guy.
+
                         </p>
                     </Grid.Column>
                 </Grid.Row>

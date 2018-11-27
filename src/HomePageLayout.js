@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {BasicModal} from './BasicModal'
+import think from './tinking.png'
 import me from './me.jpg'
 import {
     Button,
@@ -16,6 +17,7 @@ import {
     Segment,
     Visibility,
 } from 'semantic-ui-react'
+import {Modal} from "semantic-ui-react/dist/commonjs/modules/Modal/Modal";
 
 
 const HomepageHeading = ({ mobile }) => (
@@ -41,10 +43,10 @@ const HomepageHeading = ({ mobile }) => (
                 marginTop: mobile ? '0.5em' : '1.5em',
             }}
         />
-        <Button primary size='huge'>
-            Get Started
+        <p primary size='huge'>
+           Lets Get Started
             <Icon name='right arrow' />
-        </Button>
+        </p>
     </Container>
 )
 
@@ -75,8 +77,7 @@ class HomepageLayout extends Component {
                     <Segment
                         inverted
                         textAlign='center'
-                        // style={{ minHeight: 700, padding: '1em 0em', backgroundImage: 'url(./me.jpg)'}}
-                        style={{ minHeight: 700, padding: '1em 0em', backgroundColor: '#003300'}}
+                        style={{ minHeight: 500, padding: '1em 0em', background: 'linear-gradient(to bottom, #07101d, #004366, #007e91, #00b982, #0df02c)'}}
                         vertical
                     >
                         <Menu
@@ -134,14 +135,8 @@ class HomepageLayout extends Component {
                                     <Image bordered rounded size='large' src={me} />
                                 </Grid.Column>
                             </Grid.Row>
-                            <Grid.Row>
-                                <Grid.Column textAlign='center'>
-                                    <Button size='huge'>Check Them Out</Button>
-                                </Grid.Column>
-                            </Grid.Row>
                         </Grid>
                     </Segment>
-
                     <Segment style={{ padding: '0em' }} vertical>
                         <Grid.Row>
                             <Grid.Column textAlign='center'>
@@ -150,6 +145,8 @@ class HomepageLayout extends Component {
                                 </Header>
                             </Grid.Column>
                         </Grid.Row>
+                    </Segment>
+                    <Segment style={{ padding: '0em' }} vertical>
                         <Grid celled='internally' columns='equal' stackable>
                             <Grid.Row textAlign='center'>
                                 <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -162,11 +159,11 @@ class HomepageLayout extends Component {
                                 </Grid.Column>
                                 <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                                     <Header as='h3' style={{fontSize: '2em'}}>
-                                        "It shouldn't be Afghan only, But Muslim Only "
+                                        "OR Muslim Only ? "
                                     </Header>
                                     <p style={{fontSize: '1.33em'}}>
-                                        <Image avatar src='/images/avatar/large/nan.jpg' />
-                                        <b>Nan</b> I choose this route!
+                                        <Image avatar src={think} />
+                                        <b>Nan</b> I decided to go with Muslim Only and choose this route!
                                     </p>
                                 </Grid.Column>
                             </Grid.Row>
@@ -187,13 +184,13 @@ class HomepageLayout extends Component {
                                 at that point I never thought that message will change my life forever....
                             </p>
                             <Header as='h3' style={{fontSize: '2em'}}>
-                                "Dil Ba Dil Ra Darad"
+                                "Dil Ba Dil Ra Darad - 5G Connection"
                             </Header>
                             <p style={{fontSize: '1.33em'}}>
                                 Allhamdu Lellah the third thing I said was “My name is Mohamad Idris what is your name ?“
                                 That’s how I got introduced to a very sweet girl Akko Jan...
                                 Allhamdeu Lellah Now I have a smile on my face because of you. Thanks to you Akko Jan !
-                                Akko Janem "I Love You !"
+
                             </p>
                             <Divider
                                 as='h4'
@@ -204,22 +201,19 @@ class HomepageLayout extends Component {
                                 <a href='#'>Voice of Heart</a>
                             </Divider>
                             <Header as='h3' style={{fontSize: '2em'}}>
-                                Did I Tell You How Much I Love You?
+                                Did I Tell You How I Feel About You?
                             </Header>
                             <p style={{fontSize: '1.33em'}}>
-                                Yes I know you probably disregarded the earlier boasts as to how much I Love, but
-                                it's really true. It didn't take long before I felt that I fell in Love with you!
+                                Yes I know you probably disregarded the earlier boasts as to how much I Like, but
+                                it's really true. It didn't take long before I felt so deeply for you!
                                 I agree with you that the love begins after marriage when we scarifies for one another
-                                and your likes will become my likes and mine will become yours. But that's the higher level of love
-                                which can only be achieved by living together Insha Allah. However I really felt the depth of my love for you when
-                                You were leaving to Toronto after visiting us. I felt I lost something very precious, as if a chunk
-                                has been removed from my chest. Not to mention how happy I get when I see you.. How you make me feel
-                                like a Man,
-                                How I cant stop thinking of you, I don't have enough words to explain my feeling for you Babes. As you
-                                know very well
-                                that I am ByeLingual ! I can talk for hours about how pretty you are and how much i like you and I think
-                                I have bugged you enough
-                                about everything. but I will conclude with one thing.
+                                and your likes will become my likes and mine will become yours. But that's the higher level of Love
+                                which can only be achieved by living together. However I really felt the depth of my feelings for you when
+                                You were leaving to Toronto after visiting us. I felt like I lost something very precious, as if a chunk
+                                has been removed from my chest. Not to mention how happy I get when I see you..
+                                How I can not stop thinking of you, I don't have enough words to explain my feeling for you Akko Jan. As you
+                                know very well that I am ByeByeLingual! I can talk for hours about how much i like you and I think
+                                I have bugged you enough about everything.  I will just conclude with one thing.
                                 <p>
                                     <b> I can not find anyone like you ! </b>
                                 </p>
@@ -233,7 +227,7 @@ class HomepageLayout extends Component {
                             <Grid divided inverted stackable>
                                 <Grid.Row>
                                     <Grid.Column width={3}>
-                                        <Header inverted as='h4' content='About' />
+                                        <Header inverted as='h4' content='About Her' />
                                         <List link inverted>
                                             <List.Item as='a'>QandolAkko</List.Item>
                                             <List.Item as='a'>ShereenAkko</List.Item>
@@ -242,20 +236,20 @@ class HomepageLayout extends Component {
                                         </List>
                                     </Grid.Column>
                                     <Grid.Column width={3}>
-                                        <Header inverted as='h4' content='Services' />
+                                        <Header inverted as='h4' content='More About Her' />
                                         <List link inverted>
-                                            <List.Item as='a'>My Gorgeous</List.Item>
-                                            <List.Item as='a'>My Sweetheart</List.Item>
-                                            <List.Item as='a'>My Babe</List.Item>
-                                            <List.Item as='a'>My Baghlava</List.Item>
+                                            <List.Item as='a'>Gorgeous</List.Item>
+                                            <List.Item as='a'>Sweetheart</List.Item>
+                                            <List.Item as='a'>Patasa</List.Item>
+                                            <List.Item as='a'>Strong</List.Item>
                                         </List>
                                     </Grid.Column>
                                     <Grid.Column width={7}>
                                         <Header as='h4' inverted>
-                                            Remember
+                                            Even More About Her
                                         </Header>
                                         <p>
-                                            Insha Allah! If You Accept Me, I will feel like I am the luckiest Afghan guy.
+                                            4096 Bit RSA Encrypted, She Won't Budge!
                                         </p>
                                     </Grid.Column>
                                 </Grid.Row>
